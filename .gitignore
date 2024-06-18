@@ -5,4 +5,4 @@
 backend/venv/
 
 # Ignore Node.js modules
-frontend/node_modules/
+job-portal/node_modules/
