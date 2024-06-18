@@ -1,0 +1,259 @@
+/* JobList.css */
+.job-item-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .job-list-heading{
+    color: rgb(12, 6, 6);
+    font-size: 50px;
+  }
+  .job-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .job-description {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .job-location {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .job-requirements {
+    margin-top: 10px;
+  }
+  
+  .job-salary {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .job-item {
+    display: inline-block; /* Display job items inline-block */
+    width: 29%;
+    height: auto; /* Adjust the width as needed */ /* Set the width of each job item to 50% minus margin */
+    margin: 10px; /* Add some margin between job items */
+    padding: 10px; /* Add padding for spacing within job items */
+    border: 1px solid #ccc; 
+   /* Add border for clarity */
+    vertical-align: top;
+  }
+  /* JobList.css */
+
+.search-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+  outline: none;
+}
+.se{
+  margin-left:2px;
+  display: inline;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}
+
+.clear-button {
+  top: 60%;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.search-container input[type="text"] ::before {
+  content: '✖'; /* Unicode character for '✖' */
+  font-size: 24px;
+  color: black; /* Adjust color as needed */
+  display: block;
+}
+
+
+.delete-button {
+  display:inline;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.rsbutton {
+  margin-left: 50%;
+  width: 40%;
+  padding: 10px;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.delete-button img {
+  width: 34px;
+  height: 34px;
+}
+
+
+.delete-button:hover img {
+  filter: brightness(80%);
+}
+.reg-button {
+  display:inline;
+  font-family: 'Times New Roman';
+  cursor: pointer;
+  margin-left: 50%;
+  font-size: 24px;
+  color: black;
+  border-style:ridge;
+  background-color: #007bff;
+}
+
+
+.fetch-button,
+.sdownload-button
+{
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fetch-button {
+  background-color: #080c11;
+  color: white;
+}
+
+.close-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 20px;
+}
+fetch-button, {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.fetch-button:hover, .close-button:hover, .download-button:hover {
+  background-color: #0056b3;
+}
+
+.fetch-button:active, .close-button:active, .download-button:active {
+  background-color: #004494;
+}
+
+.download-button {
+  text-align: right;
+  background-color: #28a745;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+.download-button:active {
+  background-color: #1e7e34;
+}
+
+.select-status {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.progress-container {
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background-color: #007bff;
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.progress-step {
+  display: inline-block;
+  width: 16%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ddd;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.progress-step.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.progress-step.completed {
+  background-color: #28a745;
+  color: white;
+}
+.progress-step.rejected {
+  background-color: #dc3545;
+  color: white;
+  width: 100%;
+}
+
+.progress-step.hired {
+  background-color: #28a745;
+  color: white;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .job-item {
+    font-size: 14px;
+  }
+
+  .job-title {
+    font-size: 18px;
+  }
+
+  .fetch-button, .close-button, .download-button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .progress-step {
+    width: 30%;
+    margin-bottom: 5px;
+  }
+
+}

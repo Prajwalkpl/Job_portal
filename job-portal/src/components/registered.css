@@ -1,0 +1,118 @@
+
+
+.registered-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .registered-heading {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .registered-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .registered-item {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .job-title {
+    font-weight: bold;
+  }
+  
+  .job-description {
+    margin-top: 5px;
+  }
+  
+  .job-location {
+    margin-top: 5px;
+    font-style: italic;
+  }
+  .registered-container {
+    padding: 20px;
+  }
+  
+  .registered-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .registered-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .registered-item {
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .job-location {
+    margin-bottom: 30px;
+  }
+  
+  .progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #4caf50;
+    z-index: 1;
+    transition: width 0.4s ease;
+  }
+  
+  .progress-step {
+    position: relative;
+    z-index: 2;
+    width: 100px;
+    text-align: center;
+  }
+  
+  .progress-step::before {
+    content: attr(data-step);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  
+  .progress-step.active::before {
+    background: #4caf50;
+    color: #fff;
+  }
+  
+  .progress-step.completed::before {
+    background: #4caf50;
+    color: #fff;
+  }
+  

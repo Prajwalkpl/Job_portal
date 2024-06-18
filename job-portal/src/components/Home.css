@@ -1,0 +1,108 @@
+/* Home.css */
+
+body, html {
+
+   
+        font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+ 
+    justify-content: center;
+    align-items: center;
+}
+
+.homes {
+    border: 5px solid #0c0d0f; /* Adjusted border size */
+
+    margin: 20px; /* Adjusted margin */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+    text-align: center;
+}
+
+.head {
+    font-size: 48px; /* Adjusted font size */
+    font-family: 'Courier New', Courier, monospace; /* Changed font family */
+    color: rgb(75, 24, 77);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+   
+}
+
+.hh {
+    margin-top: 2.5%; 
+    margin-bottom: 2.5%;
+    font-size: 25px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: typing 6s steps(60, end), blink-caret 0.75s step-end infinite;
+}
+
+.im {
+    height: 250px;
+    width: 500px;
+    margin: 20px 0;
+    margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.imp {
+    height: 250px;
+    width: 500px;
+    margin: 20px 0;
+    margin-left: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pbutton, .sbutton {
+    width: 40%; /* Adjusted width */
+    padding: 15px; /* Increased padding */
+    margin: 15px 10px; /* Adjusted margin */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pbutton:hover, .sbutton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.pbutton:focus, .sbutton:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+}
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./ma.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2; 
+    z-index: 0; /* Ensure it's behind the content */
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+.head, .hh {
+    border-right: 2px solid orange; /* Creates the caret effect */
+}
