@@ -41,7 +41,6 @@ function Home() {
 
   return (
     <div className='homes'>
-      <div className='back'><img className='im' src={My} alt='no'/></div>
       <nav></nav>
       <h1 className='head'><center>Careerlink</center></h1>
       <img className='im' src={My} alt='no'/>
